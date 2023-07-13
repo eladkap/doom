@@ -1,14 +1,17 @@
 class Marine {
-    constructor(x, y) {
-        this.x = x;
-        this.y = y;
+    constructor(marine) {
+        this.marine = marine;
+        this.marine.setScale(1);
+        this.speed = Settings.MOVEMENT_UNIT;
     }
 
-    goLeft() {
-        
+    moveRight() {
+        this.marine.flipX = false;
+        this.marine.x += this.speed;
     }
 
-    goRight() {
-
+    moveLeft() {
+        this.marine.flipX = true;
+        this.marine.x -= this.speed;
     }
 }

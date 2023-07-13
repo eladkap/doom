@@ -1,9 +1,5 @@
-/*
-TODO: take Duke Nukam sprite for player
-*/
-
 const config = {
-  type: Phaser.WEBGL,
+  type: Phaser.AUTO,
   width: Settings.SCREEN_WIDTH,
   height: Settings.SCREEN_HEIGHT,
   backgroundColor: 0x111111,
@@ -20,7 +16,7 @@ const config = {
 };
 
 var game = new Phaser.Game(config);
-
+// game.physics.startSystem(Phaser.Physics.ARCADE);
 
 // game.scene.add('LoadingScene', LoadingScene);
 // game.scene.add('PlayScene', PlayScene);
@@ -40,7 +36,7 @@ var game = new Phaser.Game(config);
 
 // function create() {
 //   console.log('Game create');
-// game.physics.startSystem(Phaser.Physics.ARCADE);
+//   game.physics.startSystem(Phaser.Physics.ARCADE);
 // }
 
 // function update() {
